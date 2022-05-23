@@ -30,7 +30,7 @@ tower.has = function(name) {
 
 // Replaces floors by it's indexes:
 tower.replace = function(from, to) {
-  // Checking for existance of to, from, & tower self:
+  // Checking for existance of "to", "from", & tower object:
   if (!tower || !this[from] || !this[to]) return null;
 
   // If the "to" parameter is string, place it:
