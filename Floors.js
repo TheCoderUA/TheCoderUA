@@ -5,8 +5,9 @@ const tower = {};
 
 tower.height = 0;
 
-tower.from = 1;
-tower.to = tower.height;
+// "Symbol.iterator":
+tower.from = 1;             // Starting point for "Symbol.iterator".
+tower.to = tower.height;    // End point.
 
 // Making the tower iterable (for ... of loop works):
 tower[Symbol.iterator] = function() {
