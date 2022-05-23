@@ -26,7 +26,7 @@ tower[Symbol.iterator] = function() {
   };
 };
 
-//
+// Now tower is concatable with arrays:
 tower[Symbol.isConcatSpreadable] = true;
 
 // Exporting tower object:
