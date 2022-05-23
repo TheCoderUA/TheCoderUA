@@ -8,7 +8,7 @@ tower.height = 0;
 tower.from = 1;
 tower.to = tower.height;
 
-// Making the tower iterable (for ... of) works:
+// Making the tower iterable (for ... of loop works):
 tower[Symbol.iterator] = function() {
 
   return {
@@ -25,6 +25,9 @@ tower[Symbol.iterator] = function() {
     }
   };
 };
+
+//
+tower[Symbol.isConcatSpreadable] = true;
 
 // Exporting tower object:
 module.exports = { tower };
